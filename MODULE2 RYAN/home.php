@@ -11,9 +11,9 @@
 
     <title>Home</title>
 <?php
-$name = $_GET['name'];
-$type = $_GET['type'];
-$price = $_GET['price'];
+$name = $_POST['name'];
+$type = $_POST['type'];
+$price = $_POST['price'];
 
 ?>
 <div class="container-sm">
@@ -22,6 +22,7 @@ $price = $_GET['price'];
     <h3 style="text-align: center; color:cyan;">Welcome To 5 Star Hotel </h3>
     <fieldset>
         <table class="table">
+        <div>
             <tr>
                 <th>Standard</th>
                 <th><?= $type ?></th>
@@ -42,7 +43,14 @@ $price = $_GET['price'];
                 <td>1 Bathroom</td>
                 <td><?= $name ?></td>
             </tr>
-            <button type="button" class="btn btn-primary btn-lg btn-block">Book Now</button>
+            </table>
+            <div style="text-align: left;">
+          <a href="Booking.php" class="btn btn-primary mb-2">
+          Book Now</a>
+         </div>
+          
+          <table class="table">
+          
             <tr>
                 <th>Superior</th>
                 <th><?= $type ?></th>
@@ -67,7 +75,14 @@ $price = $_GET['price'];
                 <td>1 Bathroom with hot water</td>
                 <td><?= $name ?></td>
             </tr>
-            <button type="button" class="btn btn-primary btn-lg btn-block">Book Now</button>
+            </table>
+            <div style="text-align: left;">
+          <a href="Booking.php" class="btn btn-primary mb-2">
+          Book Now</a>
+       
+          
+          <table class="table">
+          
             <tr>
         
                 <th>Luxury</th>
@@ -102,10 +117,14 @@ $price = $_GET['price'];
                 <td>1 Workroom</td>
                 <td><?= $name ?></td>
             </tr>
-            <button type="button" class="btn btn-primary btn-lg btn-block">Book Now</button>
+            <br>
+            </table>
+            <div style="text-align: left;">
+          <a href="Booking.php" class="btn btn-primary mb-2">
+          Book Now</a>
+           
             
-            
-        </table>
+        
     </fieldset>
  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

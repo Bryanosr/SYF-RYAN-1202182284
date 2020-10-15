@@ -17,11 +17,13 @@ $time = $_GET['time'];
 $room_type = $_GET['room_type'];
 $services = $_GET['services'];
 $number = $_GET['number'];
+
 ?>
 <div class="container-sm">
 <h4 style="text-align: center;">Home Booking</h4>
 
     <fieldset>
+    <form action="My Booking.php" method="post"> 
      <div class="form-group row">
          <label class="col-sm-2 col-form-label">Name</label>
          <div class="col-sm-10">
@@ -31,23 +33,19 @@ $number = $_GET['number'];
             <div class="form-group row">
          <label class="col-sm-2 col-form-label">Check-in</label>
          <div class="col-sm-10">
-             <input type="text" class="form=control" placeholder="dd/mm/yyyy"
-             date="date"> 
+             <input type="date" class="form=control" placeholder="dd/mm/yyyy"
+             date="date" name="in"> 
             </div>
             <div class="form-group row">
          <label class="col-sm-2 col-form-label">Duration</label>
          <div class="col-sm-10">
              <input type="text" class="form=control"
-             time="time"> 
+             time="time" name="duration"> 
              <p>Day(s)</p>
             </div>
             <div class="form-group">
       <label for="roomtype">Room Type</label>
-      <select class="form-control" id="roomtype" placeholder="Standard">
-        <option>Standard</option>
-        <option>Luxury</option>
-        <option>Superior</option>
-      </select>
+     <input type="text" name="room_type">
     </div>
     <legend>Add Service(s)</legend>
       <div class="form-check">
@@ -55,10 +53,10 @@ $number = $_GET['number'];
           <p>
             $ 20/service
           </p>
-          <input class="form-check-input" type="checkbox" value="" checked="" data-np-checked="Room Service">
+          <input class="form-check-input" type="checkbox" value="Room Sevice" data-np-checked="Room Service" name="services[]">
           Room service
           <br>
-          <input class="form-check-input" type="checkbox" value="" checked="" data-np-checked="Breakfast">
+          <input class="form-check-input" type="checkbox" value="Breakfast" data-np-checked="Breakfast" name="services[]">
           Breakfast
         </label>
       </div>
@@ -66,9 +64,12 @@ $number = $_GET['number'];
          <label class="col-sm-2 col-form-label">Phone Number</label>
          <div class="col-sm-10">
              <input type="text" class="form=control"
-            number="number"> 
+             name="number"> 
             </div>
-            <button type="button" class="btn btn-primary btn-lg btn-block">Book</button>
+          <div style="text-align: left;">
+         <input type="submit" value="Book" class="btn btn-primary mb-2">
+       
+       </form>
      </div>
 
     </fieldset>
