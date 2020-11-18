@@ -56,7 +56,7 @@ $query = mysqli_query($koneksi,"SELECT * FROM event_table WHERE id=".$_GET["id"]
                     </p>
                     <p class="card-text">Kategori: '.$row['kategori'].'</p>
                     <p class="card-text"><b>HTM Rp. '.$row['harga'].'</b></p>
-                    <a href="#" class="btn btn-primary">Edit</a>
+                    <a href="create.php" class="btn btn-primary">Edit</a>
                     <a href="#" class="btn btn-danger">Delete</a>
                 </div>
             </div>
