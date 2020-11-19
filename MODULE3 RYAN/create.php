@@ -118,7 +118,7 @@
                         </label>
                     </div>
                 </div>
-                <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+                <button name="submit" type="button" class="btn btn-primary">Submit</button>
                 <a href="#" class="btn btn-danger">Cancel</a>
             </form>
         </div>

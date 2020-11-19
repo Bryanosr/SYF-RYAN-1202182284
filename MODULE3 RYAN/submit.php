@@ -5,7 +5,7 @@ $password = "";
 $database = "db_module3";
 $koneksi = mysqli_connect($host,$user,$password,$database) or die("No connection");
 
-if(isset($_POST['submit'])){
+if(isset($POST['submit'])){
     $nama = $_POST['nama'];
     $deskripsi = $_POST['deskripsi'];
     $gambar= $_POST['gambar'];
