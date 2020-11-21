@@ -5,7 +5,6 @@ $password = "";
 $database = "db_module3";
 $koneksi = mysqli_connect($host,$user,$password,$database) or die("No connection");
 $query = mysqli_query($koneksi,"SELECT * FROM event_table");
-
  
 ?>
 <!doctype html>
