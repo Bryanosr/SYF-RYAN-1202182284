@@ -3,7 +3,7 @@ $host = "localhost";
 $user = "root";
 $password = "";
 $database = "db_module3";
-$conn = mysqli_connect($host,$user,$password,$database) or die("No connection");
+$koneksi = mysqli_connect($host,$user,$password,$database) or die("No connection");
 $query = mysqli_query($koneksi,"SELECT * FROM event_table");
 
  
@@ -34,7 +34,7 @@ $query = mysqli_query($koneksi,"SELECT * FROM event_table");
     <h3 class="text-center">WELCOME TO EAD EVENTS!</h3>
 
     <?php 
-    if ($query->num_rows > 0) {
+    if ($query->$num_rows > 0) {
         // output data of each row
         while($row = $query->fetch_assoc()) {
           echo '<div class="card" style="width: 18rem;">
