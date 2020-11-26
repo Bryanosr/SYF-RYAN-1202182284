@@ -26,7 +26,7 @@
             <ul class="navbar-nav ml-auto">
                 <?php
                 session_start();
-                if(isset($_SESSION['loginTime'])){
+                if(isset($_SESION['loginTime'])){
                 ?>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"

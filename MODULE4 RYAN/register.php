@@ -121,7 +121,7 @@ if(isset($_POST["daftar"])){
     $koneksi = mysqli_connect($host,$user,$password,$database) or die("No connection");
 
 
-    $query = mysqli_query($koneksi,"INSERT INTO user VALUES('','$nama','$email','$nohp','$sandi')");
+    $query = mysqli_query($koneksi,"INSERT INTO users VALUES('','$nama','$email','$nohp','$sandi')");
     if ($query > 0){
         echo "<script>alert('Berhasil Mendaftar'); window.location.href='login.php'</script>";
     } else {
