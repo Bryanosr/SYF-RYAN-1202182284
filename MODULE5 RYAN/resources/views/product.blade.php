@@ -4,7 +4,7 @@
 <div class="mt-5 text-center">
     @if($product=='[]')
     <p>There is no data...</p>
-    <a href="/insertproduct" type="button" class="btn btn-dark">Add Product</a>
+    <a href="/inserproduct" type="button" class="btn btn-dark">Add Product</a>
     @else
     <table class="table">
         <thead>

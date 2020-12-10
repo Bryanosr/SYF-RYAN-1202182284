@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('index');
 });
 Route::get('/product', [ProductController::class, 'viewproduct']);
 
@@ -23,7 +23,7 @@ Route::get('/insertproduct', function () {
     return view('insertproduct');
 });
 Route::get('/productinserted', function () {
-    return view('productinserted');
+    return view('productinsert');
 });
 Route::get('/orderingprocess', function () {
     return view('orderingprocess');
